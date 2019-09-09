@@ -1,0 +1,30 @@
+
+<div class="container">
+        <nav class="navbar navbar-light bg-dark">
+            <div class="navbar">
+                <h4 style="text-align: center">Reg-Form</h4>
+            </div>
+              </nav>
+    <div class="row">
+        <div class="col-md-6">
+            <form [formGroup]="Details" (submit)="submitData()">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">FirstName</label>
+                    <input type="text" class="form-control" formControlName="FirstName" id="examplename" aria-describedby="emailHelp"
+                        placeholder="Enter Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">LastName</label>
+                    <input type="text" class="form-control" formControlName="LastName" id="exampleInputPassword1" placeholder="LastName">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" formControlName="Email" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                </div>
+                <button type="submit" class="btn btn-primary">DoubleClick</button> &nbsp;
+            </form>
+        </div>
+    </div>
+</div>

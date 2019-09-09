@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">FirstName</th>
+                    <th scope="col">LastName</th>
+                    <th scope="col">EMail</th>
+                    <th scope="col">Action</th>  
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of Details;let i = index;">
+                    <th scope="row">{{i + 1}}</th>
+                    <td>{{data.FirstName}}</td>
+                    <td>{{data.LastName}}</td>
+                    <td>{{data.Email}}</td>
+                    <td>
+                        <a routerLink="../listblog/{{data.id}}" class="btn btn-primary btn-sm">Edit</a>
+                        <button (click)="deleteBlog(data.id)" class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
